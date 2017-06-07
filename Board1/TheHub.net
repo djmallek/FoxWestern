@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source C:\Users\djmal\Documents\GitHub\FoxWestern\Board1\TheHub.sch)
-    (date "6/6/2017 10:35:50 PM")
+    (date "6/6/2017 11:01:04 PM")
     (tool "Eeschema 4.0.6")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -127,7 +127,7 @@
       (tstamp 5936CBE2))
     (comp (ref J11)
       (value RFD900)
-      (footprint Pin_Headers:Pin_Header_Straight_2x08_Pitch2.54mm)
+      (footprint Pin_Headers:Pin_Header_Angled_2x08_Pitch2.54mm)
       (libsource (lib conn) (part CONN_02X08))
       (sheetpath (names /) (tstamps /))
       (tstamp 59371070))
@@ -319,7 +319,7 @@
       (tstamp 593A3BB8))
     (comp (ref J10)
       (value "SCIENCE + WHEELS POWER CONN")
-      (footprint Pin_Headers:Pin_Header_Straight_2x19_Pitch2.54mm)
+      (footprint Pin_Headers:Pin_Header_Straight_2x16_Pitch2.54mm)
       (libsource (lib conn) (part CONN_02X16))
       (sheetpath (names /) (tstamps /))
       (tstamp 593ACD97))
