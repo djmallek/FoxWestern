@@ -90,17 +90,18 @@ int main(void)
   MX_USART1_UART_Init();
 
   /* USER CODE BEGIN 2 */
-  //uint8_t Test[] = "Hello World!";
-  uint8_t Packet[6];
+  uint8_t Test[] = "Hello World!";
+  uint8_t Packet[19];
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-	  HAL_UART_Receive(&huart6,Packet,6, 10);
+	  HAL_UART_Receive(&huart6,Packet,6,10);
 	  //HAL_Delay(100);
 	  HAL_UART_Transmit(&huart6,Packet,sizeof(Packet), 10);
+	  HAL_I2C_Master_Transmit(&hi2c2,0x40<<1,Test,sizeof(Test),10);
 	  //HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_6);
 	  HAL_Delay(10);
   /* USER CODE END WHILE */
