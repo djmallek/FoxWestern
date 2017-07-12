@@ -42,9 +42,22 @@ def getButtonVal(button):
 while 1:
     packet = bytearray()
     packet.append(60)                 # 0: <
-    packet.append(getJoyVal(3))       # 1: joystick 3
-    packet.append(getJoyVal(1))       # 2: joystick 1
+    #packet.append(getJoyVal(3))       # 1: joystick 3
+    #packet.append(getJoyVal(1))       # 2: joystick 1
 #   packet.append(camSelect())       #
+    packet.append(32)
+    packet.append(72)
+    packet.append(101)
+    packet.append(108)
+    packet.append(108)
+    packet.append(111)
+    packet.append(32)
+    packet.append(119)
+    packet.append(111)
+    packet.append(114)
+    packet.append(108)
+    packet.append(100)
+    packet.append(33)
     packet.append(62)                 # 3: >
     pygame.event.get()
 #    x = getButtonVal(6)
